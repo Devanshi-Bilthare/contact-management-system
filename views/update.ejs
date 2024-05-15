@@ -1,0 +1,10 @@
+<%- include('./partials/header')%>
+
+<form class="w-[50%] p-10 mt-20 bg-slate-300 flex flex-col gap-10 m-auto" action="/contact/<%=user._id%>/update" method="post">
+    <input class="w-full p-5 text-xl bg-white" type="text" name="firstName" placeholder="Enter First Name" value="<%= user.firstName%>">
+    <input class="w-full p-5 text-xl bg-white" type="text" name="lastName" placeholder="Enter Last Name" value="<%= user.lastName%>">
+    <input class="w-full p-5 text-xl bg-white" type="text" name="number" placeholder="Enter Contact Number" value="<%= user.number%>">
+    <button class="w-full p-5 text-xl bg-slate-900 text-slate-100">Update Contact</button>
+</form>
+
+<%- include('./partials/footer')%>
